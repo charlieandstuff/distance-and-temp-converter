@@ -19,7 +19,7 @@ while bottles_of_beer > 0:
     if bottles_of_beer == 0:
         print (f"{bottles_of_beer} bottles of beer on the wall {bottles_of_beer} bottles of beer go to the store buy some more ")
         bottles_of_beer = bottles_of_beer + 100
-        print (f"{bottles_of_beer} bottles of beer!")       
+        print (f"{bottles_of_beer} bottles of beer!")
         break
 
     time.sleep(1)
