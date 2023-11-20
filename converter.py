@@ -7,7 +7,7 @@ if menuchoice == "1":
     print (temp_unit + " selected ")
     temp_value = float (input ("enter value of " + temp_unit + " "))
 
-    if temp_value.isdigit:
+    if temp_value.isdigit: 
        print (f"{temp_value}{temp_unit}")
 
        if temp_unit == "C":
