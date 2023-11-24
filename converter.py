@@ -5,9 +5,10 @@ if menuchoice == "1":
     print ( "temperature selected enter unit of temperature C for Celcius, F for Fahrenheit" )
     temp_unit = input ("enter selection ")
     print (temp_unit + " selected ")
-    temp_value = float (input ("enter value of " + temp_unit + " "))
+    temp_value = (input ("enter value of " + temp_unit + " "))
 
     if temp_value.isdigit: 
+       temp_value = float(temp_value)
        print (f"{temp_value}{temp_unit}")
 
        if temp_unit == "C":
