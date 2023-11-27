@@ -3,15 +3,26 @@ scramble = input ("enter string to encrypt ")
 for char in scramble:
   ASCII = ord(char)
   
-  ## 
-  if ASCII > 109:
+  ## if the numbers value 
+  if ASCII > 109 and ASCII < 123 :
       ASCII = ASCII - 13
+    
   ## 
-  elif ASCII < 109:
+  elif ASCII < 109 and ASCII > 90 :
      ASCII = ASCII + 13
+     
+  elif ASCII < 78 and ASCII < 91:
+     ASCII = ASCII + 13
+     
+  elif ASCII > 78 and ASCII < 91 :
+     ASCII = ASCII - 13
+  
+  else:
+     ASCII = ASCII
+
   ASCIIconvert = chr(ASCII)
   print(ASCIIconvert)
- 
+  print (ASCII)
 #if menuchoice == "encypt":
 
 
