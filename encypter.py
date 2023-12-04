@@ -8,10 +8,10 @@ for char in scramble:
       ASCII = ASCII - 13
     
   ## 
-  elif ASCII < 109 and ASCII > 90 :
+  elif ASCII < 109 and ASCII > 96 :
      ASCII = ASCII + 13
      
-  elif ASCII < 78 and ASCII < 91:
+  elif ASCII < 78 and ASCII < 96:
      ASCII = ASCII + 13
      
   elif ASCII > 78 and ASCII < 91 :
