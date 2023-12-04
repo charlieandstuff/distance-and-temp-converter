@@ -3,11 +3,10 @@ scramble = input ("enter string to encrypt ")
 for char in scramble:
   ASCII = ord(char)
   
-  ## if the numbers value 
+  ## if statements which determine whether to add or take off 13 to shift the letters into a cyper
   if ASCII > 109 and ASCII < 123 :
       ASCII = ASCII - 13
-    
-  ## 
+   
   elif ASCII < 109 and ASCII > 96 :
      ASCII = ASCII + 13
      
@@ -21,8 +20,8 @@ for char in scramble:
      ASCII = ASCII
 
   ASCIIconvert = chr(ASCII)
-  print(ASCIIconvert)
-  print (ASCII)
+  print(ASCIIconvert, end = "")
+
 #if menuchoice == "encypt":
 
 
