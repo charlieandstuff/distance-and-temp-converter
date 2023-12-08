@@ -5,12 +5,13 @@ if menuchoice == "1":
     print ( "temperature selected enter unit of temperature C for Celcius, F for Fahrenheit" )
     temp_unit = input ("enter selection ")
     print (temp_unit + " selected ")
-    temp_value = (input ("enter value of " + temp_unit + " "))
-
-    if temp_value.isdigit: 
+    temp_value = input ("enter value of " + temp_unit + " ")
+    
+    ## checks if the value of temperature selected is a digit to avoid crashes
+    if temp_value.isdigit(): 
        temp_value = float(temp_value)
        print (f"{temp_value}{temp_unit}")
-
+       ## if statements to see which temperature unit was selected then converts to the other
        if temp_unit == "C":
         output = float ((temp_value * 1.8) + 32)
         print (f"{output}" + "F has been converted from" + f"{temp_value}{temp_unit}")
@@ -26,6 +27,7 @@ if menuchoice == "1":
         print ("you cant follow simple steps idiot ")
         
 elif menuchoice == "2":
+    ## list of measurement values in respect to mm
     thisdict = {
         "mm": 1,
         "millimeter": 1,
@@ -43,12 +45,14 @@ elif menuchoice == "2":
 
     print ( "distance selected please enter what measurement you want to use  mm, cm, inch, ft, , m, km or miles " )
     distance_unit = input ("enter ")
+    ## determines if they unit user entered was apart of the dictionary
     if distance_unit in thisdict:
         convert_from = thisdict[distance_unit]
         print (distance_unit + " selected ")
-        distance_value = float (input ("enter value of " + distance_unit + " "))
-        
-        if distance_unit.isdigit: 
+        distance_value = input ("enter value of " + distance_unit + " ")
+        ##checks if the value is a digit to avoid logic errors
+        if distance_value.isdigit(): 
+            distance_value = float(distance_value)
             print (f"{distance_value}{distance_unit}")
             print (" please put in a unit you would like to convert to from your selected " + f"{distance_value}{distance_unit}")
             convert_to = input ("enter unit ")
